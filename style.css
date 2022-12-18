@@ -1,0 +1,1411 @@
+:root {
+    --primaryColor: #ff2740;
+    --secondaryColor: #f7bcf7;
+    --lighColor: #ffffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family: 'Poppins', sans-serif; */
+
+font-family: 'Baloo Bhaijaan 2', cursive;
+
+
+scroll-behavior: smooth;
+list-style: none;
+}
+
+
+::selection{
+    background-color: var(--primaryColor);
+}
+
+/* -------------------------------------------------------------------
+                                3NASR MOBASHER
+ --------------------------------------------------------------------*/
+
+
+
+/* animashion */
+
+.dynmik {
+position: relative;
+color: #f7bcf7;
+}
+
+.dynmik::after {
+    content:"";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   border-left: 2PX solid #ff2740;
+left: 0;
+animation: typing 2.0s steps(9)infinite;
+background-color: #171a1c;
+
+
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 -35;
+       
+    }
+   
+} 
+
+/*animashion */
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+
+    
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.section-text p {
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 2.8rem;
+    font-size: 1rem;
+    width: 45rem;
+}
+
+
+
+html{
+    font-size: 16px;
+    color: var(--lighColor);
+}
+
+
+span{
+    color: var(--primaryColor);
+}
+
+h1{
+    font-size: 3.9rem;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+}
+
+
+h3 {
+    font-size: 1.7rem;
+}
+
+
+h4 {
+    color: var(--secondaryColor);
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+
+/* -------------------------------------------------------------------
+                                Header
+ --------------------------------------------------------------------*/
+
+
+ .home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+header{
+    width: 100%;
+    height: 100px;
+    /* glass */
+    background: linear-gradient(rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.10);
+box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+/* glass */
+position: fixed;
+top: 0;
+z-index: 999;
+padding-top: 20px;
+
+}
+
+
+
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+
+}
+
+
+
+
+nav ul li a{
+    color: var(--lighColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+
+
+/* -------------------------------------------------------------------
+                                MOSHTRK
+ --------------------------------------------------------------------*/
+
+
+
+.btn {
+    background-color: var(--primaryColor);
+    color: var(--lighColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+      
+        border: 2PX solid var(--primaryColor);
+  transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--bgColor-1);
+}
+
+
+
+/* -------------------------------------------------------------------
+                                Contact
+ --------------------------------------------------------------------*/
+
+
+
+ .Contact{
+    width: 100%;
+flex-grow: 1;
+padding: 0 var(--padding);
+display: flex;
+align-items: center;
+
+justify-content: space-between;
+
+}
+
+
+.Contact-text .myname{
+margin-top: 20px;
+}
+
+
+
+.social{
+    margin-top: 50px;
+    font-size: 2.0rem;
+}
+
+
+.social i{
+    color: var(--lighColor);
+    padding-right: 10px;
+    transition: 0.4s;
+}
+
+.social i a {
+    text-decoration: none;
+    
+}
+
+.social i:hover{
+    color: var(--primaryColor);
+}
+
+
+
+
+.imgMy {
+    width: 33rem;
+    position: relative;
+    right: 40px;
+}
+
+
+/*--------------------------------------------------------------------- 
+                               About
+------------------------------------------------------------------------*/
+
+.About{
+background-color: var(--bgColor-2);
+width: 100%;
+height: 430px;
+display: flex;
+justify-content: space-around;
+
+}
+
+
+.About h1 {
+padding-top: 50px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------------- 
+                               SERVICES
+------------------------------------------------------------------------*/
+
+.services {
+    background-color: var(--bgColor-1);
+    padding: var(--padding);
+    width: 100%;
+    height: 100vh;
+}
+
+
+.services h1 {
+    text-align: center;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+    /*  */
+
+.cart {
+    width: 300px;
+    height: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(1 1 1/15);
+    margin: 15px;
+}
+
+
+
+.cart p {
+        color: var(--secondaryColor);
+        letter-spacing: 1px;
+        line-height: 1.8rem;
+        font-size: 1rem;
+}
+
+.cart i {
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primaryColor);
+    margin: 1rem;
+}
+
+
+.font-text {
+text-align: center;
+}
+
+
+/*--------------------------------------------------------------------- 
+                               Proojects
+------------------------------------------------------------------------*/
+
+.myProojects {
+    background-color: var(--bgColor-2);
+    padding: var(--padding);
+    width: 100%;
+    height: 160vh;
+}
+
+
+.myProojects h1 {
+    text-align: center;
+    position: relative;
+    bottom: 55px;
+}
+
+.cartprooject {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+.cartbroj1{
+
+    width: 350px;
+    height: 300px; 
+    /* background-color: var(--bgColor-2); */
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(1 1 1/15);
+    margin: 15px;
+}
+
+.cartbroj2{
+    /* background-image: url(imgs/IMG_E1986.JPG); */
+    width: 350px;
+    height: 300px; 
+    /* background-color: var(--bgColor-2); */
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(1 1 1/15);
+    margin: 15px;
+}
+
+
+.cartbroj3{
+
+    width: 350px;
+    height: 300px; 
+    /* background-color: var(--bgColor-2); */
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(1 1 1/15);
+    margin: 15px;
+}
+
+
+
+.imgcart1{
+    position: relative;
+    left: -29px;
+    bottom: 17px;
+    border-radius: 20px;
+    width: 121%;
+    height: 114%;
+
+}
+
+
+.imgcart1:hover{
+    background-color: red;
+    z-index: 100;
+}
+
+
+.cartprooject img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171a1c;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.cartprooject img:hover::before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+
+
+
+/*--------------------------------------------------------------------- 
+                               skills
+------------------------------------------------------------------------*/
+
+
+.skills {
+    background-color: var(--bgColor-1);
+    padding: var(--padding);
+    width: 100%;
+    height: 90vh;
+     list-style: none;
+}
+
+
+
+.skell {
+    /* width: 500px; */
+    margin: -5px auto;
+    padding: 20px;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 22); */
+position: relative;
+bottom: 100px;
+
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+
+
+.skills h3 {
+    margin: 5px;
+}
+
+
+.skell li {
+    margin: 20px 0;
+      padding: 10px;
+
+}
+
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 25), 0 1px 2px rgba(0, 0, 0, 24);
+    transition: all 0.3s cubic-bezier(.25,8,.25,1);
+
+}
+
+
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+
+
+/* skill */
+
+.html{
+    width: 90%;
+animation: html 3s;
+animation-iteration-count: infinite;
+}
+
+
+.css{
+    width: 80%;
+animation: css 3s;
+animation-iteration-count: infinite;
+}
+
+
+
+.git{
+    width: 95%;
+animation: git 3s;
+animation-iteration-count: infinite;
+}
+
+
+
+.java{
+    width: 30%;
+animation: java 3s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes html {
+    
+    0%{
+width: 0%;
+
+  }
+
+100%{
+    width: 90%;
+}
+
+}
+
+@keyframes css {
+    
+    0%{
+width: 0%;
+
+  }
+
+100%{
+    width: 80%;
+}
+
+}
+
+
+@keyframes git {
+    
+    0%{
+width: 0%;
+
+  }
+
+100%{
+    width: 95%;
+}
+
+}
+
+
+
+@keyframes java {
+    
+    0%{
+width: 0%;
+
+  }
+
+100%{
+    width: 30%;
+}
+
+}
+
+
+
+/* skill */
+
+
+
+/* -------------------------------------------------------------------
+                                Contact
+ --------------------------------------------------------------------*/
+
+
+
+
+.contact {
+    background-color: var(--bgColor-2);
+    padding: var(--padding);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+form {
+    text-align: end;
+}
+
+
+input {
+    padding: 14px;
+border: none;
+border-bottom: 2px solid var(--primaryColor);
+background-color: #171a1c17;
+width: 700px;
+color: white;
+}
+
+
+
+.contact img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    bottom: 100px;
+    
+}
+
+
+
+.contact a {
+    padding: 20px 30px;
+    border: 2px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+ .see{
+    text-align: center;
+    margin-top: 40px;
+} 
+
+
+.contact a:hover{
+    background-color: var(--bgColor-2);
+}
+
+
+
+
+/* -------------------------------------------------------------------
+                                FOOTER
+ --------------------------------------------------------------------*/
+
+
+
+footer{
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+    background-color: var(--bgColor-1);
+    text-align: center;
+}
+
+
+footer p {
+    color: var(--secondaryColor);
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.social2{
+    margin-top: 20px;
+    font-size: 2.0rem;
+}
+
+
+
+.social2 i{
+    color: var(--lighColor);
+    padding-right: 10px;
+    transition: 0.4s;
+}
+
+.social2 i a {
+    text-decoration: none;
+    
+}
+
+
+.social2 i:hover{
+    color: var(--primaryColor);
+}
+
+
+.end{
+    letter-spacing: 2px;
+    color: var(--lighColor);
+}
+
+
+
+
+
+/* -------------------------------------------------------------------
+                                media
+ --------------------------------------------------------------------*/
+
+
+
+ @media (max-width:991px){
+
+h5 {    font-size: 2.37rem;}
+
+
+
+    .cart p {
+        color: var(--secondaryColor);
+        letter-spacing: 0px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cart i {
+        font-size: 50px;
+        text-align: center;
+        color: var(--primaryColor);
+        margin: 2rem;
+    }
+
+    html {
+        font-size: 55%;
+      }
+
+      .imgMy {
+        display: inline-block;
+        width: 420px;
+    }
+
+
+
+    nav ul li {
+
+        display: inline-block;
+    }
+
+    
+    .About img {        display: inline-block;    }
+
+
+    
+    /* .home {        height: 75vh;    } */
+
+
+    .cartbroj1 {        width: 480px;    }
+    .cartbroj2 {        width: 480px;    }
+    .cartbroj3 {        width: 480px;    }
+
+
+
+
+
+    
+
+    
+        .contact img {
+            display: inline-block;
+        }
+    
+
+    
+        .btn2 {
+            display: none;
+        }
+    
+    
+        .section-text p {
+    
+            letter-spacing: 0px;
+            font-size: 1rem;
+            width: 33rem;
+        }
+        
+    
+        .services {
+            height: auto;
+        }
+    
+        .myProojects {
+    height: auto;
+        }
+    
+        .skills {
+    height: auto;;
+        }
+    
+        .skell {
+            position: relative;
+            bottom: 20px;
+        }
+    
+    
+        input {    width: auto;        }
+
+
+    
+
+    
+        .box {
+            justify-content: center;
+           
+        }
+    
+     
+    }
+    
+    @media (max-width: 768px) {
+
+
+        .imgMy     {          display: none;   }
+        .About img {      display: none;       }
+        .contact img {    display: none;       }
+
+        nav ul li {       font-size: 7px;    }
+
+        .section-text p {
+            letter-spacing: 0px;
+            font-size: 15px;
+             width: auto; 
+            text-align: center;
+            line-height: 35px;
+        }
+
+
+    }
+
+
+    @media (max-width: 450px) {
+
+        h2 {
+            font-size: 4.5rem;
+        }
+
+        .section-text p {
+            letter-spacing: 0px;
+            font-size: 15px;
+             width: auto; 
+            text-align: center;
+            line-height: 35px;
+        }
+
+        h5 {            font-size: 2.37rem;        }
+
+
+
+        
+
+
+        html {
+            font-size: 50%;
+          }   
+
+  header {
+    font-size: 3rem;
+  }
+
+  nav ul li {       display: none;    }
+
+    }
+
+
+    @media (max-width: 285px) {
+
+
+        html {            font-size: 44%;          }  
+
+        .section-text p {
+            letter-spacing: 0px;
+            font-size: 13px;
+            width: auto;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        
+        .cartbroj1 {
+
+            height: 250px;
+
+        }
+
+        
+        .cartbroj2 {
+   
+            height: 250px;
+
+        }
+
+
+        .cartbroj3 {
+
+            height: 250px;
+
+        }
+
+
+
+
+h5 {    font-size: 3.37rem;     }
+
+
+.cart p {    font-size: 13px;      }
+
+
+
+
+
+
+
+
+        .imgcart1 {
+            position: relative;
+            left: -16px;
+            bottom: 11px;
+            border-radius: 20px;
+            width: 117%;
+            height: 107%;
+        }
+        
+
+
+
+    }
+
+
+    @media (max-width: 229px) {
+
+
+        html {            font-size: 35%;          }  
+
+        .myProojects h1 {
+            text-align: center;
+            position: relative; 
+             bottom: 0px; 
+        }
+
+        input {
+            width: 195px;
+        }
+
+        .section-text p {
+            text-align: center;
+            letter-spacing: 0px;
+            font-size: 13px;
+            width: 38rem;
+            line-height: 25px;
+        }
+
+        h2 {
+            font-size: 4.5rem;
+        }
+        
+
+        }
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
